@@ -67,9 +67,8 @@ public class Main {
         }
         System.out.println("New Size: "+top15BabyGirlNamesUSAList.size());
 
-        // ArrayList.contains()
-        System.out.println(top15BabyGirlNamesUSAList.contains("Anna"));
-        System.out.println(top15BabyGirlNamesUSAList.contains("Sofia"));
-
+        // ArrayList.contains() returns a boolean.
+        System.out.println(top15BabyGirlNamesUSAList.contains("Anna")); // false
+        System.out.println(top15BabyGirlNamesUSAList.contains("Sofia")); // true.
     }
 }
