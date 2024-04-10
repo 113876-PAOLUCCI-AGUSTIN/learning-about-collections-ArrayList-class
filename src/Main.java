@@ -20,6 +20,23 @@ public class Main {
 
         // CREATING AN ARRAYLIST.
         // Constructs an empty list with an initial capacity of ten.
-        ArrayList<String> topTenBabyGirlNames = new ArrayList<String>();
+
+        ArrayList<String> top15BabyGirlNamesUSAList = new ArrayList<String>();
+        top15BabyGirlNamesUSAList.add("Olivia");
+        top15BabyGirlNamesUSAList.add("Emma");
+        top15BabyGirlNamesUSAList.add("Charlotte");
+        top15BabyGirlNamesUSAList.add("Amelia");
+        top15BabyGirlNamesUSAList.add("Sophia");
+        top15BabyGirlNamesUSAList.add("Isabella");
+        top15BabyGirlNamesUSAList.add("Ava");
+        top15BabyGirlNamesUSAList.add("Mia");
+        top15BabyGirlNamesUSAList.add("Evelyn");
+        top15BabyGirlNamesUSAList.add("Luna");
+        top15BabyGirlNamesUSAList.add("Harper");
+        top15BabyGirlNamesUSAList.add("Camila");
+        top15BabyGirlNamesUSAList.add("Sofia");
+        top15BabyGirlNamesUSAList.add("Scarlett");
+        top15BabyGirlNamesUSAList.add("Elizabeth");
+        System.out.println(top15BabyGirlNamesUSAList.size());
     }
 }
