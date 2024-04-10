@@ -13,8 +13,13 @@
  * SOURCE: https://www.w3schools.com/java/java_arraylist.asp
  */
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
+        // CREATING AN ARRAYLIST.
+        // Constructs an empty list with an initial capacity of ten.
+        ArrayList<String> topTenBabyGirlNames = new ArrayList<String>();
     }
 }
