@@ -21,6 +21,7 @@ public class Main {
         // CREATING AN ARRAYLIST.
         // Use the wrapper classes to store the primitives in an ArrayList.
         // Constructs an empty list with an initial capacity of ten.
+        // ArrayList.add()
 
         ArrayList<String> top15BabyGirlNamesUSAList = new ArrayList<>();
         top15BabyGirlNamesUSAList.add("Olivia");
@@ -39,11 +40,16 @@ public class Main {
         top15BabyGirlNamesUSAList.add("Scarlett");
         top15BabyGirlNamesUSAList.add("Elizabeth");
 
+        // GET ONE ELEMENT AT INDEX...
+        // ArrayList.get()
+        System.out.println("The fifth names is: " + top15BabyGirlNamesUSAList.get(5));
+
         for (int i = 0; i < top15BabyGirlNamesUSAList.size(); i++) {
             System.out.println((i+1)+") " + top15BabyGirlNamesUSAList.get(i));
         }
 
         // REMOVING ELEMENTS IN AN ARRAY.
+        // ArrayList.remove()
         top15BabyGirlNamesUSAList.remove("Emma"); // Removing with an object.
         top15BabyGirlNamesUSAList.remove(12); // Removing at index.
 
@@ -52,6 +58,18 @@ public class Main {
         }
         System.out.println("New Size: "+top15BabyGirlNamesUSAList.size());
 
+        // REPLACING AN ELEMENT AT INDEX 12.
+        // ArrayList.set()
+        top15BabyGirlNamesUSAList.set(12,"Maria de los Angeles");
+
+        for (int i = 0; i < top15BabyGirlNamesUSAList.size(); i++) {
+            System.out.println((i+1)+") " + top15BabyGirlNamesUSAList.get(i));
+        }
+        System.out.println("New Size: "+top15BabyGirlNamesUSAList.size());
+
+        // ArrayList.contains()
+        System.out.println(top15BabyGirlNamesUSAList.contains("Anna"));
+        System.out.println(top15BabyGirlNamesUSAList.contains("Sofia"));
 
     }
 }
