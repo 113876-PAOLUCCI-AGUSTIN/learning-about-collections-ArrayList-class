@@ -19,9 +19,10 @@ public class Main {
     public static void main(String[] args) {
 
         // CREATING AN ARRAYLIST.
+        // Use the wrapper classes to store the primitives in an ArrayList.
         // Constructs an empty list with an initial capacity of ten.
 
-        ArrayList<String> top15BabyGirlNamesUSAList = new ArrayList<String>();
+        ArrayList<String> top15BabyGirlNamesUSAList = new ArrayList<>();
         top15BabyGirlNamesUSAList.add("Olivia");
         top15BabyGirlNamesUSAList.add("Emma");
         top15BabyGirlNamesUSAList.add("Charlotte");
@@ -37,6 +38,20 @@ public class Main {
         top15BabyGirlNamesUSAList.add("Sofia");
         top15BabyGirlNamesUSAList.add("Scarlett");
         top15BabyGirlNamesUSAList.add("Elizabeth");
-        System.out.println(top15BabyGirlNamesUSAList.size());
+
+        for (int i = 0; i < top15BabyGirlNamesUSAList.size(); i++) {
+            System.out.println((i+1)+") " + top15BabyGirlNamesUSAList.get(i));
+        }
+
+        // REMOVING ELEMENTS IN AN ARRAY.
+        top15BabyGirlNamesUSAList.remove("Emma"); // Removing with an object.
+        top15BabyGirlNamesUSAList.remove(12); // Removing at index.
+
+        for (int i = 0; i < top15BabyGirlNamesUSAList.size(); i++) {
+            System.out.println((i+1)+") " + top15BabyGirlNamesUSAList.get(i));
+        }
+        System.out.println("New Size: "+top15BabyGirlNamesUSAList.size());
+
+
     }
 }
