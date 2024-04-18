@@ -14,6 +14,8 @@
  */
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -70,5 +72,13 @@ public class Main {
         // ArrayList.contains() returns a boolean.
         System.out.println(top15BabyGirlNamesUSAList.contains("Anna")); // false
         System.out.println(top15BabyGirlNamesUSAList.contains("Sofia")); // true.
+
+
+        // Creating an ArrayList from an array:
+        Integer[] array = {3, 5, 95, 4, 15, 34, 3, 6, 5};
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(array));
+        // Shuffle (MEZCLAR)
+        Collections.shuffle(list);
+        System.out.println(list);
     }
 }
