@@ -47,7 +47,7 @@ public class Main {
         System.out.println("The fifth names is: " + top15BabyGirlNamesUSAList.get(5));
 
         for (int i = 0; i < top15BabyGirlNamesUSAList.size(); i++) {
-            System.out.println((i+1)+") " + top15BabyGirlNamesUSAList.get(i));
+            System.out.println((i + 1) + ") " + top15BabyGirlNamesUSAList.get(i));
         }
 
         // REMOVING ELEMENTS IN AN ARRAY.
@@ -56,18 +56,18 @@ public class Main {
         top15BabyGirlNamesUSAList.remove(12); // Removing at index.
 
         for (int i = 0; i < top15BabyGirlNamesUSAList.size(); i++) {
-            System.out.println((i+1)+") " + top15BabyGirlNamesUSAList.get(i));
+            System.out.println((i + 1) + ") " + top15BabyGirlNamesUSAList.get(i));
         }
-        System.out.println("New Size: "+top15BabyGirlNamesUSAList.size());
+        System.out.println("New Size: " + top15BabyGirlNamesUSAList.size());
 
         // REPLACING AN ELEMENT AT INDEX 12.
         // ArrayList.set()
-        top15BabyGirlNamesUSAList.set(12,"Maria de los Angeles");
+        top15BabyGirlNamesUSAList.set(12, "Maria de los Angeles");
 
         for (int i = 0; i < top15BabyGirlNamesUSAList.size(); i++) {
-            System.out.println((i+1)+") " + top15BabyGirlNamesUSAList.get(i));
+            System.out.println((i + 1) + ") " + top15BabyGirlNamesUSAList.get(i));
         }
-        System.out.println("New Size: "+top15BabyGirlNamesUSAList.size());
+        System.out.println("New Size: " + top15BabyGirlNamesUSAList.size());
 
         // ArrayList.contains() returns a boolean.
         System.out.println(top15BabyGirlNamesUSAList.contains("Anna")); // false
@@ -76,9 +76,49 @@ public class Main {
 
         // Creating an ArrayList from an array:
         Integer[] array = {3, 5, 95, 4, 15, 34, 3, 6, 5};
-        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(array));
+        //ArrayList<Integer> list = new ArrayList<>(Arrays.asList(array));
         // Shuffle (MEZCLAR)
-        Collections.shuffle(list);
-        System.out.println(list);
+//        Collections.shuffle(list);
+//        System.out.println(list);
+
+        //
+        System.out.println("\n---------- ARRAYLIST --------");
+        ArrayList<String> fruits = new ArrayList<>();
+        fruits.add("Frutilla");
+        fruits.add("Palta");
+        fruits.add("Mango");
+        fruits.add("Limón");
+        fruits.add("Arándano");
+        System.out.println(fruits);
+        for (String s : fruits) {
+            System.out.println(s);
+        }
+        fruits.remove("Palta");
+        for (String s : fruits) {
+            System.out.println(s);
+        }
+
+
+        //
+        System.out.println("\n---- FILLING AN ARRAYLIST ----");
+        Arrays.fill(array, 11); // LLena todas las posiciones con el valor.
+
+        String[] streets = {"Santa Fe", "Asunción"};
+        Arrays.sort(streets);
+        for (String st : streets) {
+            System.out.println(st + " ");
+        }
+        Arrays.fill(streets, "Done");
+        for (String st : streets) {
+            System.out.println(st + " ");
+        }
     }
 }
+
+
+//            for(String s : fruits){
+//                System.out.print(s + " ");
+//
+//                fruits.sort(null); // ordena natural A a Z
+//                for(String su : fruits){
+//                    System.out.println(su);
